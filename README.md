@@ -3,13 +3,13 @@
 
 IKEA Trådfri Gateway plugin for [Homebridge](https://github.com/nfarina/homebridge).
 
-# Installation
+## Installation
 
 1. Install Homebridge using: `npm install -g homebridge`
 2. Install this plugin using: `npm install -g homebridge-tradfri`
 3. Update your configuration file. See the sample below.
 
-# Sample Configuration
+## Sample Configuration
 
 The PSK (Pre-Shared Key) can be found printed on the bottom of the IKEA Trådfri Gateway.
 
