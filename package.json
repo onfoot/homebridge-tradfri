@@ -1,0 +1,39 @@
+{
+  "name": "homebridge-tradfri",
+  "version": "1.0.0",
+  "description": "Homebridge support for IKEA Trådfri devices",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/jesper-lindberg/homebridge-tradfri",
+  "author": "Jesper Lindberg",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin",
+    "ikea",
+    "tradfri",
+    "homekit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jesper-lindberg/homebridge-tradfri.git"
+  },
+  "bugs": {
+    "url": "github.com/jesper-lindberg/homebridge-tradfri/issues"
+  },
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "engines": {
+    "node": ">=7.7.2",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mdns": "^2.3.3",
+    "promise-queue": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "@types/mdns": "^0.0.31",
+    "typescript": "^2.2.2"
+  }
+}
