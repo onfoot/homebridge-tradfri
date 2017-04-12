@@ -3,7 +3,7 @@
 import * as os from 'os'; 
 import * as util from 'util'; 
 import { exec, spawn } from 'child_process';
-import { Queue } from 'promise-queue';
+import * as Queue from 'promise-queue';
 
 let queue = new Queue(1, Infinity)
 
