@@ -20,7 +20,7 @@ export module COAP {
       this.hostname = hostname
       this.port = port
       this.psk = psk
-      this.binary = 'bin/coap-client-' + os.platform()
+      this.binary = process.cwd() + 'bin/coap-client-' + os.platform()
     }
 
     get (uri) {

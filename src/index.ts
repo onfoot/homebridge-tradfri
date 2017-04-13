@@ -55,6 +55,9 @@ class Tradfri {
     browser.on('serviceDown', (service) => {
       this.log('Service down: ', service)
     })
+    browser.on('error', (error) => {
+      this.log('Error:', error)
+    })
     browser.start()
   }
 
