@@ -39,7 +39,13 @@ class Tradfri {
   }
 
   didFinishLaunching () {
-    const browser = mdns.createBrowser(mdns.udp('coap'))
+    var sequence = [
+      mdns.rst.DNSServiceResolve(),
+      mdns.rst.getaddrinfo({families:[4]}),
+      mdns.rst.makeAddressesUnique()
+    ];
+
+    const browser = mdns.createBrowser(mdns.udp('coap'), { resolverSequence: sequence })
     browser.on('serviceUp', (service) => {
       client = new tradfri.Client(this.log, service.addresses.pop(),
         service.port, this.config.psk)
