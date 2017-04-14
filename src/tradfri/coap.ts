@@ -21,8 +21,8 @@ export module COAP {
       this.port = port
       this.psk = config.psk
 
-      if (config.coapClient) {
-        this.binary = config.coapClient
+      if (config.coapClientPath) {
+        this.binary = config.coapClientPath
       } else {
         this.binary = __dirname + '/../../bin/coap-client-' + os.platform()
       }
