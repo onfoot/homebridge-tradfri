@@ -47,8 +47,8 @@ class Tradfri {
 
     const browser = mdns.createBrowser(mdns.udp('coap'), { resolverSequence: sequence })
     browser.on('serviceUp', (service) => {
-      client = new tradfri.Client(this.log, service.addresses.pop(),
-        service.port, this.config.psk)
+      client = new tradfri.Client(this.log, this.config, service.addresses.pop(),
+        service.port)
 
       client.getDevices().then((devices) => {
         devices.forEach((device) => {

@@ -21,9 +21,9 @@ export module tradfri {
     log: (format: string, message: any) => void;
     coap: COAP.Client;
 
-    constructor (log, hostname, port, psk) {
+    constructor (log, config, hostname, port) {
       this.log = log
-      this.coap = new COAP.Client(this.log, hostname, port, psk)
+      this.coap = new COAP.Client(log, config, hostname, port)
     }
 
     getDevices () {

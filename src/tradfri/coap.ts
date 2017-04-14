@@ -15,12 +15,19 @@ export module COAP {
     psk: string;
     binary: string;
 
-    constructor (log, hostname, port, psk) {
+    constructor (log, config, hostname, port) {
       this.log = log
       this.hostname = hostname
       this.port = port
-      this.psk = psk
-      this.binary = __dirname + '/../../bin/coap-client-' + os.platform()
+      this.psk = config.psk
+
+      if (config.coapClient) {
+        this.binary = config.coapClient
+      } else {
+        this.binary = __dirname + '/../../bin/coap-client-' + os.platform()
+      }
+
+      this.log("Using COAP client binary:", this.binary)
     }
 
     get (uri) {
