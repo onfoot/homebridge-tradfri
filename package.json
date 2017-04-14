@@ -1,6 +1,6 @@
 {
   "name": "homebridge-tradfri",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Homebridge support for IKEA Trådfri devices",
   "main": "dist/index.js",
   "homepage": "https://github.com/jesper-lindberg/homebridge-tradfri",
