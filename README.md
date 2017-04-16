@@ -3,6 +3,16 @@
 
 IKEA Trådfri Gateway plugin for [Homebridge](https://github.com/nfarina/homebridge).
 
+## Features
+- Automatic discovery of the Trådfri gateway
+- Turn on/off lights
+- Adjust the brightness
+
+## To be implemented
+- Adjust color temperature (figuring out how to do this the best way)
+- Make the plugin work with third party HomeKit apps
+- Better error handling and logging
+
 ## Installation
 
 1. Install Homebridge using: `npm install -g homebridge`
@@ -38,3 +48,6 @@ $ make
 ```
 
 You'll find the ```coap-client``` binary in ```./examples```
+
+## Credits
+Big thanks to everyone discussing Trådfri in this issue: https://github.com/bwssytems/ha-bridge/issues/570
