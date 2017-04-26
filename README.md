@@ -45,6 +45,7 @@ $ git submodule update --init --recursive
 $ ./autogen.sh
 $ ./configure --disable-documentation --disable-shared
 $ make
+$ sudo make install
 ```
 
 You'll find the ```coap-client``` binary in ```./examples```
