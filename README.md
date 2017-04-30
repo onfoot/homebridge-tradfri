@@ -37,7 +37,7 @@ The plugin comes with prebuilt x86-64 binaries for macOS and Linux. There is no 
 ## Compiling libcoap
 Installing [libcoap](https://github.com/obgm/libcoap) as per the following instructions for Debian/Ubuntu:
 ```shell
-$ apt-get install libtool git build-essential install autoconf automake
+$ apt-get install libtool git build-essential autoconf automake
 $ git clone --recursive https://github.com/obgm/libcoap.git
 $ cd libcoap
 $ git checkout dtls
