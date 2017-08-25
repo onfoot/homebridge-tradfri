@@ -139,7 +139,7 @@ class Lightbulb {
           return
         }
 
-        if (value === 1) {
+        if (value) {
           client.turnOn(this.deviceId)
         } else {
           client.turnOff(this.deviceId)
